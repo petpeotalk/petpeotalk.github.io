@@ -1,6 +1,6 @@
 // Styling for the footer
 footer {
-    padding: 25px 0;
+    padding: 25px 0 125px;
     text-align: center;
     color: fade-out(white, .7);
     background-color: $gray-darker;
@@ -22,5 +22,9 @@ footer {
                 }
             }
         }
+    }
+
+    @media (min-width: 992px) {
+        padding-bottom: 25px;
     }
 }

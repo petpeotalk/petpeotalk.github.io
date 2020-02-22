@@ -1,11 +1,12 @@
 // Styling for the navbar
 #mainNav {
     border-color: fade-out($gray-darker, .95);
-    background-color: white;
+    background-color: $theme-primary;
+    color: white;
     @include transition-all;
     @include heading-font;
     .navbar-brand {
-        color: $theme-primary;
+        color: white;
         @include heading-font;
         &:hover,
         &:focus {
@@ -20,13 +21,13 @@
     .navbar-nav {
         > li {
             > a {
-                font-size: 11px;
-                @include alt-font;
+                font-size: 16px;
+                font-weight: 500;
                 &.active {
-                    color: $theme-primary !important;
-                    background-color: transparent;
+                    color: white !important;
+                    background-color: $theme-primary;
                     &:hover {
-                        background-color: transparent;
+                        background-color: $theme-primary;
                     }
                 }
             }
@@ -40,8 +41,8 @@
         }
     }
     @media (min-width: 992px) {
-        border-color: transparent;
-        background-color: transparent;
+        border-color: $theme-primary;
+        background-color: $theme-primary;
         .navbar-brand {
             color: fade(white, 70%);
             &:hover,
@@ -58,7 +59,7 @@
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .9);
-            background-color: white;
+            background-color: $theme-primary;
             .navbar-brand {
                 color: $gray-darker;
                 &:hover,

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cac7893a-e7b1-4cc0-af09-edddb504903b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1USZFEO9reEKeQgipFvES4NQLv1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/term" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cac7893a-e7b1-4cc0-af09-edddb504903b" name="Default Changelist" comment="" />
+      <created>1575351851235</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575351851235</updated>
+      <workItem from="1575351854399" duration="952000" />
+      <workItem from="1575359424194" duration="1292000" />
+      <workItem from="1575522756279" duration="427000" />
+      <workItem from="1575523648811" duration="632000" />
+      <workItem from="1575998364206" duration="1639000" />
+      <workItem from="1577106752375" duration="1898000" />
+      <workItem from="1577108659989" duration="2766000" />
+      <workItem from="1577154115745" duration="1485000" />
+      <workItem from="1578133654882" duration="105000" />
+      <workItem from="1581943519331" duration="405000" />
+      <workItem from="1582360223226" duration="362000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add privacy term(temporary)">
+      <created>1575523124146</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575523124146</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix privacy term(temporary)">
+      <created>1575524208115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575524208115</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add dog breed data">
+      <created>1575999049051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575999049051</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add FAQ template">
+      <created>1577109437877</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577109437878</updated>
+    </task>
+    <task id="LOCAL-00005" summary="개인정보 처리방침 추가">
+      <created>1577155780619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577155780619</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add privacy term(temporary)" />
+    <MESSAGE value="Fix privacy term(temporary)" />
+    <MESSAGE value="Add dog breed data" />
+    <MESSAGE value="Add FAQ template" />
+    <MESSAGE value="개인정보 처리방침 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="개인정보 처리방침 추가" />
+  </component>
+</project>

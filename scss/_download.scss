@@ -3,8 +3,9 @@ section.download {
     position: relative;
     padding: 150px 0;
     h2 {
-        font-size: 50px;
-        margin-top: 0;
+        font-size: 30px;
+        margin-bottom: 30px;
+        word-break: keep-all;
     }
     .badges {
         .badge-link {
@@ -24,7 +25,7 @@ section.download {
     }
     @media(min-width: 768px) {
         h2 {
-            font-size: 70px;
+            font-size: 50px;
         }
     }
 }

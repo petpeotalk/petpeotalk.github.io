@@ -3,20 +3,37 @@ header.masthead {
     position: relative;
 
     width: 100%;
-    padding-top: 150px;
+    padding-top: 60px;
     padding-bottom: 100px;
+    color: black;
 
-    color: white;
-    background: url('../img/bg-pattern.png'), $theme-secondary;
-    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
     .header-content {
-        max-width: 500px;
+        max-width: 800px;
         margin-bottom: 100px;
 
         text-align: center;
+        h3 {
+            font-size: 25px;
+            font-weight: bold;
+        }
         h1 {
-            font-size: 30px;
+            font-size: 32.5px;
+            word-break: keep-all;
+            font-weight: bold;
+            color: $theme-primary;
+        }
+        .btn-kakao {
+            background-color: $brand-kakao;
+            border-radius: 10px;
+            font-size: 25px;
+            transition: all 0.5s;
+            position: fixed;
+            bottom: 10px;
+            width: calc(100% - 40px);
+            left: 0;
+            margin: 20px;
+            z-index: 1000;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
     }
     .device-container {
@@ -28,8 +45,9 @@ header.masthead {
         }
     }
     @media (min-width: 992px) {
-        height: 100vh;
-        min-height: 775px;
+        padding-top: 150px;
+        height: 50vh;
+        min-height: 975px;
         padding-top: 0;
         padding-bottom: 0;
         .header-content {
@@ -38,6 +56,11 @@ header.masthead {
             text-align: left;
             h1 {
                 font-size: 50px;
+            }
+            .btn-kakao {
+                position: static;
+                width: auto;
+                box-shadow: none;
             }
         }
         .device-container {
