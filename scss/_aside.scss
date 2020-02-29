@@ -6,5 +6,12 @@ aside.aside {
 
   h5 {
     margin: 0;
+    font-size: 13px;
+  }
+
+  @media(min-width: 992px) {
+    h5 {
+      font-size: 17px;
+    }
   }
 }
