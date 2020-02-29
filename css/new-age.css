@@ -492,6 +492,10 @@ section.feature .feature-content .feature-buttons .feature-button {
   font-size: 18px;
 }
 
+section.feature .feature-content .feature-buttons .feature-button.active {
+  font-weight: bold;
+}
+
 section.feature .feature-content .feature-buttons .feature-button:focus, section.feature .feature-content .feature-buttons .feature-button:active {
   outline: 0;
   box-shadow: none;
