@@ -1,7 +1,7 @@
 // Styling for the call to action section
 section.cta {
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
     // background-image: url('../img/bg-cta.jpg');
     background-color: $theme-secondary;
     background-position: center;
@@ -14,6 +14,7 @@ section.cta {
             font-size: 30px;
             margin-top: 0;
             margin-bottom: 25px;
+            font-weight: bold;
         }
         a {
             color: black;

@@ -62,11 +62,16 @@ section h2 {
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: #ffa723;
+  padding: 20px 40px 10px;
   color: white;
   transition: all .35s;
   font-family: 'NanumSquare', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+}
+
+#mainNav > .container {
+  align-items: flex-end;
 }
 
 #mainNav .navbar-brand {
@@ -80,13 +85,32 @@ section h2 {
   color: #ef8f00;
 }
 
+#mainNav .navbar-brand .logo-square,
+#mainNav .navbar-brand .logo-text {
+  height: 30px;
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
   color: #222222;
 }
 
+#mainNav .navbar-collapse {
+  padding-top: 20px;
+}
+
+#mainNav .navbar-nav {
+  flex-direction: row;
+}
+
+#mainNav .navbar-nav > li {
+  flex: 1;
+  text-align: center;
+}
+
 #mainNav .navbar-nav > li > a {
+  color: white;
   font-size: 16px;
   font-weight: 500;
 }
@@ -98,16 +122,6 @@ section h2 {
 
 #mainNav .navbar-nav > li > a.active:hover {
   background-color: #ffa723;
-}
-
-#mainNav .navbar-nav > li > a,
-#mainNav .navbar-nav > li > a:focus {
-  color: #222222;
-}
-
-#mainNav .navbar-nav > li > a:hover,
-#mainNav .navbar-nav > li > a:focus:hover {
-  color: #ffa723;
 }
 
 @media (min-width: 992px) {
@@ -155,6 +169,7 @@ header.masthead {
   padding-top: 60px;
   padding-bottom: 100px;
   color: black;
+  background: no-repeat bottom url("../img/background.png");
 }
 
 header.masthead .header-content {
@@ -173,6 +188,10 @@ header.masthead .header-content h1 {
   word-break: keep-all;
   font-weight: bold;
   color: #ffa723;
+}
+
+header.masthead .header-content a > img {
+  width: 180px;
 }
 
 header.masthead .header-content .btn-kakao {
@@ -203,7 +222,7 @@ header.masthead .device-container .screen img {
   header.masthead {
     padding-top: 150px;
     height: 50vh;
-    min-height: 975px;
+    min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -226,7 +245,9 @@ header.masthead .device-container .screen img {
 
 section.download {
   position: relative;
-  padding: 150px 0;
+  padding: 75px 0;
+  background-color: #333333;
+  color: white;
 }
 
 section.download h2 {
@@ -235,44 +256,40 @@ section.download h2 {
   word-break: keep-all;
 }
 
-section.download .badges .badge-link {
-  display: block;
-  margin-bottom: 25px;
+section.download .badges a {
+  text-decoration: none;
 }
 
-section.download .badges .badge-link:last-child {
-  margin-bottom: 0;
+section.download .badges a:last-child img {
+  width: 166px;
+  padding: 0;
 }
 
-section.download .badges .badge-link img {
-  height: 60px;
-}
-
-@media (min-width: 768px) {
-  section.download .badges .badge-link {
-    display: inline-block;
-    margin-bottom: 0;
-  }
+section.download .badges img {
+  width: 150px;
+  padding: 10px 10px;
 }
 
 @media (min-width: 768px) {
   section.download h2 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  section.download .badges img {
+    height: 60px;
   }
 }
 
 section.features {
   background-color: #ffa723;
   color: white;
-}
-
-section.features .section-heading {
-  margin-bottom: 50px;
+  padding: 50px 0;
 }
 
 section.features .section-heading h1 {
   margin-top: 0;
   font-weight: bold;
+  font-size: 30px;
+  word-break: keep-all;
 }
 
 section.features .section-heading p {
@@ -282,17 +299,33 @@ section.features .section-heading p {
 section.features .feature-item {
   max-width: 325px;
   margin: 0 auto;
+  display: flex;
+}
+
+section.features .feature-item .number {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+section.features .feature-item .image img {
+  width: 100px;
 }
 
 section.features .feature-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 section.features .feature-item h3 {
-  font-size: 20px;
+  font-size: 15px;
   word-break: keep-all;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+  font-weight: normal;
 }
 
 section.features .feature-item i {
@@ -304,9 +337,98 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 992px) {
+  section.features .feature-item {
+    display: inherit;
+  }
+  section.features .feature-item .image img {
+    width: 120px;
+    margin-right: 0;
+  }
+  section.features .feature-item .number {
+    width: 35px;
+    margin-bottom: 20px;
+  }
+  section.features .feature-item h3 {
+    font-size: 20px;
+    word-break: keep-all;
+  }
+}
+
+section.description {
+  background-color: white;
+  color: black;
+  padding: 50px 0;
+}
+
+section.description .section-heading h1 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 30px;
+  word-break: keep-all;
+}
+
+section.description .section-heading p {
+  margin-bottom: 0;
+}
+
+section.description .feature-item {
+  max-width: 325px;
+  margin: 0 auto;
+  display: flex;
+}
+
+section.description .feature-item .number {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+section.description .feature-item .image img {
+  width: 60px;
+  margin-right: 20px;
+}
+
+section.description .feature-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+section.description .feature-item h3 {
+  font-size: 15px;
+  word-break: keep-all;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+section.description .feature-item i {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 15px;
+  background: linear-gradient(to left, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 992px) {
+  section.description .feature-item {
+    display: inherit;
+  }
+  section.description .feature-item .image img {
+    width: 120px;
+    margin-right: 0;
+  }
+  section.description .feature-item h3 {
+    font-size: 20px;
+    word-break: keep-all;
+  }
+}
+
 section.cta {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #ffdead;
   background-position: center;
 }
@@ -321,6 +443,7 @@ section.cta .cta-content h2 {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 25px;
+  font-weight: bold;
 }
 
 section.cta .cta-content a {

@@ -1,7 +1,7 @@
 // Styling for the features section
-section.features {
-    background-color: $theme-primary;
-    color: white;
+section.description {
+    background-color: white;
+    color: black;
     padding: 50px 0;
 
     .section-heading {
@@ -21,14 +21,13 @@ section.features {
         display: flex;
 
         .number {
-            width: 20px;
-            height: 20px;
+            width: 35px;
             margin-bottom: 20px;
-            margin-right: 5px;;
         }
 
         .image img {
-            width: 100px;
+            width: 60px;
+            margin-right: 20px;
         }
     }
     .feature-item {
@@ -61,11 +60,6 @@ section.features {
             .image img {
                 width: 120px;
                 margin-right: 0;
-            }
-
-            .number {
-                width: 35px;
-                margin-bottom: 20px;
             }
 
             h3 {

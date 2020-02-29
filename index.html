@@ -18,9 +18,6 @@
   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
   <!-- Custom styles for this template -->
   <link href="css/new-age.min.css" rel="stylesheet">
 
@@ -31,20 +28,26 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">도기보기</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="img/logo-square.png" class="img-fluid logo-square" alt="로고">
+        <img src="img/logo-text.png" class="img-fluid logo-text" alt="도기보기">
+      </a>
       <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button> -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#how-to-use">사용방법</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">특징</a>
+            <a class="nav-link js-scroll-trigger" href="#features">소개하기</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">다운로드</a>
+            <a class="nav-link js-scroll-trigger" href="#description">특징설명</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">시작하기</a>
           </li>
         </ul>
       </div>
@@ -70,7 +73,9 @@
           <div class="header-content mx-auto">
             <h3 class="mb-3">반려동물 채팅서비스, 도기보기</h3>
             <h1 class="mb-5">우리집 댕댕이와 <br> 실시간으로 채팅해보세요</h1>
-            <a href="http://pf.kakao.com/_IxoikT" target="_blank "class="btn btn-xl btn-kakao js-scroll-trigger">채널 추가</a>
+            <a href="http://pf.kakao.com/_IxoikT" target="_blank "class="js-scroll-trigger">
+              <img src="img/channel-button-large.png" alt="카카오톡 채널 추가">
+            </a>
           </div>
         </div>
       </div>
@@ -80,34 +85,37 @@
   <section class="features" id="how-to-use">
     <div class="container">
       <div class="section-heading text-center">
-        <h1>도기보기 사용방법</h1>
-        <!-- <p class="text-muted">Check out what you can do with this app theme!</p> -->
-        <hr>
+        <h1>어떻게 멍멍이와 채팅할 수 있죠?</h1>
       </div>
       <div class="row">
-
         <div class="col-lg-12 my-auto">
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-4">
                 <div class="feature-item">
-                  <i class="icon-screen-smartphone text-primary"></i>
-                  <h3>남는 스마트폰 공기계를 준비해주세요</h3>
-                  <!-- <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p> -->
+                  <img class="number" src="img/how-to-use-1.png" alt="1">
+                  <p class="text-muted image">
+                    <img src="img/how-to-use-connect.png" alt="연동">
+                  </p>
+                  <h3>카카오톡과 남는 스마트폰을 연동해주세요</h3>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="feature-item">
-                  <i class="icon-camera text-primary"></i>
-                  <h3>어플리케이션을 설치해주세요</h3>
-                  <!-- <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p> -->
+                  <img class="number" src="img/how-to-use-2.png" alt="2">
+                  <p class="text-muted image">
+                    <img src="img/how-to-use-set.png" alt="설치">
+                  </p>
+                  <h3>아이를 잘 볼 수 있는 곳에 배치해주세요</h3>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="feature-item">
-                  <i class="icon-present text-primary"></i>
-                  <h3>카카오톡 도기보기와 연동하면 준비 끝!</h3>
-                  <!-- <p class="text-muted">As always, this theme is free to download and use for any purpose!</p> -->
+                  <img class="number" src="img/how-to-use-3.png" alt="3">
+                  <p class="text-muted image">
+                    <img src="img/how-to-use-chat.png" alt="채팅">
+                  </p>
+                  <h3>일상 속에서 멍멍이한테 카톡을 받아보세요</h3>
                 </div>
               </div>
             </div>
@@ -153,15 +161,60 @@
     </div>
     <div class="overlay"></div>
   </section>
+  
+  <section class="description" id="description">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h1>안심하고 사용하세요</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="feature-item">
+                  <p class="text-muted image">
+                    <img src="img/description-encrypt.png" alt="암호화">
+                  </p>
+                  <h3>서비스내 모든 인증은 암호화된 QR코드로 이뤄집니다</h3>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="feature-item">
+                  <p class="text-muted image">
+                    <img src="img/description-webrtc.png" alt="webRTC">
+                  </p>
+                  <h3>WebRTC기술을 기반으로 안전한 스트리밍을 지원합니다</h3>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="feature-item">
+                  <p class="text-muted image">
+                    <img src="img/description-streaming.png" alt="스트리밍">
+                  </p>
+                  <h3>영상 일체를 서버에 올리지도, 저장하지도 않습니다</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section class="download bg-primary text-center" id="download">
+  <section class="download text-center" id="download">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 class="section-heading">이제는 안심하고 외출하세요</h2>
+          <h2 class="section-heading">지금 무료로 시작하기</h2>
           <!-- <p>Our app is available on any mobile device! Download now to get started!</p> -->
           <div class="badges">
-            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+            <a href="http://pf.kakao.com/_IxoikT" target="_blank">
+              <img src="img/channel-button-large.png" alt="카카오톡 채널 추가">
+            </a>
+            <a class="badge-link" target="_blank" href="#">
+              <img src="img/google-play-badge.svg" alt="구글플레이에서 다운로드">
+            </a>
             <!-- <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a> -->
           </div>
         </div>

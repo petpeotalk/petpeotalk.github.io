@@ -2,7 +2,11 @@
 #mainNav {
     border-color: fade-out($gray-darker, .95);
     background-color: $theme-primary;
+    padding: 20px 40px 10px;
     color: white;
+    & > .container {
+        align-items: flex-end;
+    }
     @include transition-all;
     @include heading-font;
     .navbar-brand {
@@ -12,15 +16,26 @@
         &:focus {
             color: darken($theme-primary, 10%);
         }
+        .logo-square,
+        .logo-text {
+            height: 30px;
+        }
     }
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
         color: $gray-darker;
     }
+    .navbar-collapse {
+        padding-top: 20px;
+    }
     .navbar-nav {
+        flex-direction: row;
         > li {
+            flex: 1;
+            text-align: center;
             > a {
+                color: white;
                 font-size: 16px;
                 font-weight: 500;
                 &.active {
@@ -29,13 +44,6 @@
                     &:hover {
                         background-color: $theme-primary;
                     }
-                }
-            }
-            > a,
-            > a:focus {
-                color: $gray-darker;
-                &:hover {
-                    color: $theme-primary;
                 }
             }
         }
