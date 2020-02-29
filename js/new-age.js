@@ -40,6 +40,16 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  $(window).scroll(function() {
+    var bottomHeight = 1100;
+    if($(document).height() - $(window).scrollTop() < bottomHeight ) {
+      $('#btn-kakao').css('bottom', '-500px');
+    } else {
+      $('#btn-kakao').css('bottom', '10px');
+    }
+ });
+
   // button effect
   $('#feature-chat').click(function () {
     $('#feature-chat').addClass('active');

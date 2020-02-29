@@ -49,10 +49,13 @@ section.feature {
             }
         }
         .feature-descriptions {
-            min-height: 150px;
+            min-height: 65px;
+            margin-bottom: 10px;
+            word-break: keep-all;
 
             .feature-description {
                 display: none;
+
                 &.active {
                     display: block;
                 }

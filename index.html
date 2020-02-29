@@ -25,6 +25,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/new-age.min.css" rel="stylesheet">
+  <link href="css/device-mockup.css" rel="stylesheet">
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144971361-1"></script>
@@ -40,12 +41,6 @@
 </head>
 
 <body id="page-top">
-  <aside class="aside">
-    <h5>
-      지금바로 카카오채널을 추가해주세요!
-      <img src="img/aside.png" alt="채널 추가">
-    </h5>
-  </aside>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -53,10 +48,10 @@
         <img src="img/logo-square.png" class="img-fluid logo-square" alt="로고">
         <img src="img/logo-text.png" class="img-fluid logo-text" alt="도기보기">
       </a>
-      <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
-      </button> -->
-      <div class="navbar-collapse" id="navbarResponsive">
+      </button>
+      <div class="navbar-collapse collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#how-to-use">사용법</a>
@@ -80,11 +75,11 @@
       <div class="row h-100">
         <div class="col-lg-5 order-2 order-lg-1 my-auto">
           <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait white">
+            <div class="device-mockup iphone_se portrait white">
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/mock.png" class="img-fluid" alt="">
+                  <img src="img/chat.gif" class="img-fluid" alt="">
                 </div>
               </div>
             </div>
@@ -92,9 +87,9 @@
         </div>
         <div class="col-lg-7 order-1 order-lg-2 my-auto">
           <div class="header-content mx-auto">
-            <h3 class="mb-3">반려동물 채팅서비스, 도기보기</h3>
-            <h1 class="mb-5">우리집 댕댕이와 <br> 실시간으로 채팅해보세요</h1>
-            <a href="http://pf.kakao.com/_IxoikT" target="_blank "class="js-scroll-trigger btn-kakao">
+            <h3>반려동물 채팅서비스, 도기보기</h3>
+            <h1>우리집 멍멍이와 <br> 실시간으로 채팅해보세요</h1>
+            <a href="http://pf.kakao.com/_IxoikT" target="_blank "class="js-scroll-trigger btn-kakao" id="btn-kakao">
               <img src="img/channel-button-large.png" alt="카카오톡 채널 추가">
             </a>
           </div>
@@ -118,7 +113,7 @@
                   <p class="text-muted image">
                     <img src="img/how-to-use-connect.png" alt="연동">
                   </p>
-                  <h3>카카오톡과 남는 스마트폰을 연동해주세요</h3>
+                  <h3>카카오톡에 남는 스마트폰을 연동해주세요</h3>
                 </div>
               </div>
               <div class="col-lg-4">
@@ -154,10 +149,10 @@
             <div class="row">
               <div class="col-lg-5 offset-lg-2 my-auto">
                 <h2>밖에서도 언제나 <br>같이 있는 것처럼!</h2>
-                <div class="feature-buttons mb-5">
-                  <button class="btn btn-outline feature-button active" id="feature-chat">채팅하기</button> |
-                  <button class="btn btn-outline feature-button" id="feature-video">영상보기</button> | 
+                <div class="feature-buttons mb-3">
+                  <button class="btn btn-outline feature-button active" id="feature-video">영상보기</button> | 
                   <button class="btn btn-outline feature-button" id="feature-image">사진보기</button>
+                  <button class="btn btn-outline feature-button" id="feature-chat">채팅하기</button>
                 </div>
                 <div class="feature-descriptions">
                   <p class="feature-description active" id="feature-chat-description">
@@ -282,6 +277,11 @@
   <footer>
     <div class="container">
       <p>&copy; Petpeotalk Inc. 2020. All Rights Reserved.</p>
+      <br>
+      <p>대표전화: 010-8369-4332</p>
+      <p>경기도 성남시 분당구 판교로 289번길20 지능형ICT융합연구센터(대표: 권륜환)</p>
+      <p>이메일: petpeotalk@gmail.com</p>
+      <p>사업자등록번호: 858-88-01139</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <a href="/term/privacy.html">개인정보취급방침</a>
