@@ -38,5 +38,32 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+  // button effect
+  $('#feature-chat').click(function () {
+    $('#feature-chat').addClass('active');
+    $('#feature-chat-description').addClass('active');
+    $('#feature-video').removeClass('active');
+    $('#feature-video-description').removeClass('active');
+    $('#feature-image').removeClass('active');
+    $('#feature-image-description').removeClass('active');
+  })
+
+  $('#feature-video').click(function () {
+    $('#feature-video').addClass('active');
+    $('#feature-video-description').addClass('active');
+    $('#feature-chat').removeClass('active');
+    $('#feature-chat-description').removeClass('active');
+    $('#feature-image').removeClass('active');
+    $('#feature-image-description').removeClass('active');
+  })
+
+  $('#feature-image').click(function () {
+    $('#feature-image').addClass('active');
+    $('#feature-image-description').addClass('active');
+    $('#feature-video').removeClass('active');
+    $('#feature-video-description').removeClass('active');
+    $('#feature-chat').removeClass('active');
+    $('#feature-chat-description').removeClass('active');
+  })
 
 })(jQuery); // End of use strict
