@@ -1,7 +1,6 @@
 // Styling for the masthead
 header.masthead {
     position: relative;
-
     width: 100%;
     padding-top: 60px;
     padding-bottom: 100px;
@@ -23,21 +22,24 @@ header.masthead {
             font-weight: bold;
             color: $theme-primary;
         }
-        a > img {
-            width: 180px;
-        }
+
         .btn-kakao {
             background-color: $brand-kakao;
             border-radius: 10px;
             font-size: 25px;
             transition: all 0.5s;
             position: fixed;
+            height: 50px;
             bottom: 10px;
             width: calc(100% - 40px);
             left: 0;
             margin: 20px;
             z-index: 1000;
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+            & > img {
+                height: 100%;
+            }
         }
     }
     .device-container {
@@ -58,6 +60,9 @@ header.masthead {
             margin-bottom: 0;
 
             text-align: left;
+            a > img {
+                width: 180px;
+            }
             h1 {
                 font-size: 40px;
             }

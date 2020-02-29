@@ -1,6 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var topOffset = 160;
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -8,7 +10,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top)
+          scrollTop: (target.offset().top - topOffset)
         }, 1000, "easeOutCubic");
         return false;
       }
@@ -23,6 +25,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
+    offset: topOffset
   });
 
   // Collapse Navbar

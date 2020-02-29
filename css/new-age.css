@@ -9,6 +9,11 @@ aside.aside {
   text-align: center;
   color: white;
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  top: 0;
+  height: 50px;
 }
 
 aside.aside h5 {
@@ -30,6 +35,7 @@ body {
 
 body {
   font-family: 'NanumSquare','Helvetica', 'Arial', 'sans-serif';
+  padding-top: 150px;
 }
 
 a {
@@ -80,8 +86,11 @@ section h2 {
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: #ffa723;
-  padding: 20px 40px 10px;
+  padding: 20px 20px 10px;
   color: white;
+  position: fixed;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+  top: 50px;
   transition: all .35s;
   font-family: 'NanumSquare', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -112,10 +121,6 @@ section h2 {
   font-size: 12px;
   padding: 8px 10px;
   color: #222222;
-}
-
-#mainNav .navbar-collapse {
-  padding-top: 20px;
 }
 
 #mainNav .navbar-nav {
@@ -157,6 +162,9 @@ section h2 {
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
     color: white;
   }
+  #mainNav .navbar-collapse {
+    padding-top: 10px;
+  }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
     color: rgba(255, 255, 255, 0.7);
@@ -168,20 +176,6 @@ section h2 {
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
     background-color: #ffa723;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #222222;
-  }
-  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #ffa723;
-  }
-  #mainNav.navbar-shrink .navbar-nav > li > a,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-    color: #222222;
-  }
-  #mainNav.navbar-shrink .navbar-nav > li > a:hover,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #ffa723;
   }
 }
 
@@ -212,22 +206,23 @@ header.masthead .header-content h1 {
   color: #ffa723;
 }
 
-header.masthead .header-content a > img {
-  width: 180px;
-}
-
 header.masthead .header-content .btn-kakao {
   background-color: #ffe500;
   border-radius: 10px;
   font-size: 25px;
   transition: all 0.5s;
   position: fixed;
+  height: 50px;
   bottom: 10px;
   width: calc(100% - 40px);
   left: 0;
   margin: 20px;
   z-index: 1000;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+header.masthead .header-content .btn-kakao > img {
+  height: 100%;
 }
 
 header.masthead .device-container {
@@ -251,6 +246,9 @@ header.masthead .device-container .screen img {
   header.masthead .header-content {
     margin-bottom: 0;
     text-align: left;
+  }
+  header.masthead .header-content a > img {
+    width: 180px;
   }
   header.masthead .header-content h1 {
     font-size: 40px;
