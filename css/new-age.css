@@ -104,6 +104,10 @@ section h2 {
   flex-direction: row;
 }
 
+#mainNav .navbar-nav .nav-item {
+  min-width: 85px;
+}
+
 #mainNav .navbar-nav > li {
   flex: 1;
   text-align: center;
@@ -231,7 +235,7 @@ header.masthead .device-container .screen img {
     text-align: left;
   }
   header.masthead .header-content h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   header.masthead .header-content .btn-kakao {
     position: static;
@@ -267,7 +271,7 @@ section.download .badges a:last-child img {
 
 section.download .badges img {
   width: 150px;
-  padding: 10px 10px;
+  padding: 5px 10px;
 }
 
 @media (min-width: 768px) {
@@ -347,6 +351,7 @@ section.features .feature-item i {
   }
   section.features .feature-item .number {
     width: 35px;
+    height: 35px;
     margin-bottom: 20px;
   }
   section.features .feature-item h3 {

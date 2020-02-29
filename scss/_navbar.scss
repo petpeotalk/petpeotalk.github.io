@@ -31,6 +31,9 @@
     }
     .navbar-nav {
         flex-direction: row;
+        .nav-item {
+            min-width: 85px;
+        }
         > li {
             flex: 1;
             text-align: center;

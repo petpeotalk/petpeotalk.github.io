@@ -105,7 +105,7 @@ function js() {
   return gulp
     .src([
       './js/*.js',
-      '!./js/*.min.js'
+      '!./js/*.min.js',
     ])
     .pipe(uglify())
     .pipe(header(banner, {
@@ -138,3 +138,14 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+
+gulp.task('launcher', function(){
+  switch (process.env.NODE_ENV){
+    case 'development':
+      // Run dev tasks from here
+      break;
+    case 'production':
+      // Run prod tasks
+      break;
+  }
+});
