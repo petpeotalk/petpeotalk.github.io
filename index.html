@@ -79,7 +79,11 @@
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/chat.gif" class="img-fluid" alt="">
+                  <!-- <video autoplay>
+                    <source src="/video/chat.mov" type="video/mp4">
+                    이 브라우저에서는 비디오를 재생할 수 없습니다.
+                  </video> -->
+                  <img src="img/chat-2.gif" class="img-fluid" alt="">
                 </div>
               </div>
             </div>
@@ -147,11 +151,11 @@
         <div class="row">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-5 offset-lg-2 my-auto">
+              <div class="col-lg-6 my-auto">
                 <h2>밖에서도 언제나 <br>같이 있는 것처럼!</h2>
                 <div class="feature-buttons mb-3">
                   <button class="btn btn-outline feature-button active" id="feature-video">영상보기</button> | 
-                  <button class="btn btn-outline feature-button" id="feature-image">사진보기</button>
+                  <button class="btn btn-outline feature-button" id="feature-image">사진보기</button> |
                   <button class="btn btn-outline feature-button" id="feature-chat">채팅하기</button>
                 </div>
                 <div class="feature-descriptions">
@@ -166,16 +170,16 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-3 my-auto">
+              <div class="col-lg-6 my-auto">
                 <div class="device-container">
-                  <div>
+                  <div class="device-mockup iphone_se portrait white">
                     <div class="device">
                       <div class="screen">
                         <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                        <img src="img/mock.png" class="img-fluid" alt="">
-                      </div>
-                      <div class="button">
-                        <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                        <img id="feature-mockup-video" class="active" src="img/feature-video.png" />
+                        <img id="feature-mockup-image" src="img/feature-image.png" />
+                        <img id="feature-mockup-chat" src="img/feature-chat.png" />
+                        <!-- <img src="img/chat.gif" class="img-fluid" alt=""> -->
                       </div>
                     </div>
                   </div>

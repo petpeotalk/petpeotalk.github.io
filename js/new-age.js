@@ -58,6 +58,10 @@
     $('#feature-video-description').removeClass('active');
     $('#feature-image').removeClass('active');
     $('#feature-image-description').removeClass('active');
+
+    $('#feature-mockup-chat').addClass('active');
+    $('#feature-mockup-video').removeClass('active');
+    $('#feature-mockup-image').removeClass('active');
   })
 
   $('#feature-video').click(function () {
@@ -67,6 +71,10 @@
     $('#feature-chat-description').removeClass('active');
     $('#feature-image').removeClass('active');
     $('#feature-image-description').removeClass('active');
+
+    $('#feature-mockup-video').addClass('active');
+    $('#feature-mockup-chat').removeClass('active');
+    $('#feature-mockup-image').removeClass('active');
   })
 
   $('#feature-image').click(function () {
@@ -76,6 +84,10 @@
     $('#feature-video-description').removeClass('active');
     $('#feature-chat').removeClass('active');
     $('#feature-chat-description').removeClass('active');
+
+    $('#feature-mockup-image').addClass('active');
+    $('#feature-mockup-video').removeClass('active');
+    $('#feature-mockup-chat').removeClass('active');
   })
 
 })(jQuery); // End of use strict

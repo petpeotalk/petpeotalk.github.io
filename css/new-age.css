@@ -219,7 +219,7 @@ header.masthead .header-content .btn-kakao > img {
 }
 
 header.masthead .device-container {
-  max-width: 325px;
+  max-width: 340px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -256,7 +256,7 @@ header.masthead .device-container .screen img {
     box-shadow: none;
   }
   header.masthead .device-container {
-    max-width: 325px;
+    max-width: 340px;
   }
 }
 
@@ -475,7 +475,23 @@ section.feature .feature-content .container {
 
 section.feature .feature-content .device-container {
   margin: auto;
-  max-width: 300px;
+}
+
+section.feature .feature-content .device-container .screen > img {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 3px;
+  border: 1px solid #777777;
+}
+
+section.feature .feature-content .device-container .screen > img.active {
+  opacity: 1;
 }
 
 section.feature .feature-content .feature-buttons {

@@ -43,18 +43,26 @@
 position: absolute;
 top: 0; bottom: 0; left: 0; right: 0;
 width: 100%; height: 100%;
-background-size: 100% 100%;
-/* background-repeat: no-repeat;
-background-image: url("macbook/macbook.png"); */
+/* background-size: 100% 100%; */
+background-repeat: no-repeat;
+background-position: center center;
+/* background-image: url("macbook/macbook.png"); */
+width: 340px;
+height: 713px;
+margin: auto;
 }
 
 .device-mockup > .device > .screen {
 	position: absolute;
-	top:    11.0438729%;
+	/* top:    11.0438729%;
 	bottom: 14.6747352%;
 	left:   13.364486%;
-	right:  13.364486%;
+	right:  13.364486%; */
 	overflow: hidden;
+}
+
+.device-mockup > .device > .screen > video {
+	width: 100%;
 }
 
 .device-mockup > .device > .button {
@@ -93,7 +101,7 @@ background-image: url("macbook/macbook.png"); */
 
 .device-mockup.iphone_se.white > .device,
 .device-mockup.iphone_se.portrait.white > .device {
-	background-image: url("/img/iphone_se_port_no.png");
+	background-image: url("/img/iphone8_mockup.png");
 }
 
 .device-mockup.iphone_se.landscape.white > .device {
@@ -120,7 +128,7 @@ background-image: url("macbook/macbook.png"); */
 
 .device-mockup.iphone_se > .device > .screen,
 .device-mockup.iphone_se.portrait > .device > .screen {
-	top: 12.28%;
+	top: 14.28%;
 	bottom: 10.28%;
 	left: 8.77%;
 	right: 8.77%;
@@ -139,4 +147,15 @@ background-image: url("macbook/macbook.png"); */
 .device-mockup.iphone_se.landscape > .device > .button {
 	display: block;
 	top: 42%; bottom: 42%; left:  86.4%; right: 5.1%;
+}
+
+section.feature	.device-mockup.iphone_se {
+	padding-bottom: 650px;
+}
+
+section.feature .device-mockup.iphone_se > .device > .screen {
+	top: 14.78%;
+	bottom: 13.28%;
+	left: 9.47%;
+	right: 8.77%;
 }
