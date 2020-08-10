@@ -51,15 +51,15 @@
  });
 
   // button effect
-  $('#feature-chat').click(function () {
-    $('#feature-chat').addClass('active');
-    $('#feature-chat-description').addClass('active');
+  $('#feature-bgm').click(function () {
+    $('#feature-bgm').addClass('active');
+    $('#feature-bgm-description').addClass('active');
     $('#feature-video').removeClass('active');
     $('#feature-video-description').removeClass('active');
     $('#feature-image').removeClass('active');
     $('#feature-image-description').removeClass('active');
 
-    $('#feature-mockup-chat').addClass('active');
+    $('#feature-mockup-bgm').addClass('active');
     $('#feature-mockup-video').removeClass('active');
     $('#feature-mockup-image').removeClass('active');
   })
@@ -67,13 +67,13 @@
   $('#feature-video').click(function () {
     $('#feature-video').addClass('active');
     $('#feature-video-description').addClass('active');
-    $('#feature-chat').removeClass('active');
-    $('#feature-chat-description').removeClass('active');
+    $('#feature-bgm').removeClass('active');
+    $('#feature-bgm-description').removeClass('active');
     $('#feature-image').removeClass('active');
     $('#feature-image-description').removeClass('active');
 
     $('#feature-mockup-video').addClass('active');
-    $('#feature-mockup-chat').removeClass('active');
+    $('#feature-mockup-bgm').removeClass('active');
     $('#feature-mockup-image').removeClass('active');
   })
 
@@ -82,12 +82,12 @@
     $('#feature-image-description').addClass('active');
     $('#feature-video').removeClass('active');
     $('#feature-video-description').removeClass('active');
-    $('#feature-chat').removeClass('active');
-    $('#feature-chat-description').removeClass('active');
+    $('#feature-bgm').removeClass('active');
+    $('#feature-bgm-description').removeClass('active');
 
     $('#feature-mockup-image').addClass('active');
     $('#feature-mockup-video').removeClass('active');
-    $('#feature-mockup-chat').removeClass('active');
+    $('#feature-mockup-bgm').removeClass('active');
   })
 
 })(jQuery); // End of use strict
