@@ -499,6 +499,7 @@ section.feature .feature-content .feature-buttons {
 }
 
 section.feature .feature-content .feature-buttons .feature-button {
+  border-radius: 300px;
   border: none;
   font-size: 18px;
 }
@@ -624,7 +625,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: #ffa723;
 }
 
-.no-gutter > [class*='col-'] {
+.no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -642,7 +643,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn {
-  border-radius: 300px;
   font-family: 'NanumSquare', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
