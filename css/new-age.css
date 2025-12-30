@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - New Age v5.0.7 (https://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2021 Start Bootstrap
+ * Copyright 2013-2025 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
@@ -15,12 +15,10 @@ aside.aside {
   top: 0;
   height: 50px;
 }
-
 aside.aside h5 {
   margin: 0;
   font-size: 13px;
 }
-
 @media (min-width: 992px) {
   aside.aside h5 {
     font-size: 17px;
@@ -34,24 +32,23 @@ body {
 }
 
 body {
-  font-family: 'NanumSquare','Helvetica', 'Arial', 'sans-serif';
+  font-family: "NanumSquare", "Helvetica", "Arial", "sans-serif";
   padding-top: 70px;
 }
 
 a {
   color: #ffa723;
-  transition: all .35s;
+  transition: all 0.35s;
 }
-
 a:hover, a:focus {
-  color: #ef8f00;
+  color: rgb(239, 143.4, 0);
 }
 
 hr {
   max-width: 100px;
   margin: 25px auto 0;
   border-width: 1px;
-  border-color: rgba(34, 34, 34, 0.1);
+  border-color: rgba(34.425, 34.425, 34.425, 0.1);
 }
 
 hr.light {
@@ -64,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'NanumSquare', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "NanumSquare", "Helvetica", "Arial", "sans-serif";
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -78,73 +75,63 @@ p {
 section {
   padding: 100px 0;
 }
-
 section h2 {
   font-size: 30px;
 }
 
 #mainNav {
-  border-color: rgba(34, 34, 34, 0.05);
+  border-color: rgba(34.425, 34.425, 34.425, 0.05);
   background-color: #ffa723;
   padding: 10px 20px;
   color: black;
-  position: fixed;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
-  transition: all .35s;
-  font-family: 'NanumSquare', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-  letter-spacing: 1px;
 }
-
 #mainNav > .container {
   align-items: flex-end;
 }
-
-#mainNav .navbar-brand {
-  color: black;
-  font-family: 'NanumSquare', 'Helvetica', 'Arial', 'sans-serif';
+#mainNav {
+  position: fixed;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+  transition: all 0.35s;
+  font-family: "NanumSquare", "Helvetica", "Arial", "sans-serif";
   font-weight: 200;
   letter-spacing: 1px;
 }
-
-#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #ef8f00;
+#mainNav .navbar-brand {
+  color: black;
+  font-family: "NanumSquare", "Helvetica", "Arial", "sans-serif";
+  font-weight: 200;
+  letter-spacing: 1px;
 }
-
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+  color: rgb(239, 143.4, 0);
+}
 #mainNav .navbar-brand .logo-square,
 #mainNav .navbar-brand .logo-text {
   height: 30px;
 }
-
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
-  color: #222222;
+  color: rgb(34.425, 34.425, 34.425);
 }
-
 #mainNav .navbar-nav .nav-item {
   min-width: 85px;
 }
-
 #mainNav .navbar-nav > li {
   flex: 1;
 }
-
 #mainNav .navbar-nav > li > a {
   color: black;
   font-size: 16px;
   font-weight: 500;
 }
-
 #mainNav .navbar-nav > li > a.active {
   color: black !important;
   background-color: #ffa723;
 }
-
 #mainNav .navbar-nav > li > a.active:hover {
   background-color: #ffa723;
 }
-
 @media (min-width: 992px) {
   #mainNav {
     border-color: #ffa723;
@@ -165,7 +152,7 @@ section h2 {
     color: black;
   }
   #mainNav.navbar-shrink {
-    border-color: rgba(34, 34, 34, 0.1);
+    border-color: rgba(34.425, 34.425, 34.425, 0.1);
     background-color: #ffa723;
   }
 }
@@ -178,19 +165,16 @@ header.masthead {
   color: black;
   background: no-repeat bottom url("../img/background.png");
 }
-
 header.masthead .header-content {
   max-width: 800px;
   margin-bottom: 50px;
   text-align: center;
 }
-
 header.masthead .header-content h3 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 header.masthead .header-content h1 {
   font-size: 32.5px;
   word-break: keep-all;
@@ -198,7 +182,6 @@ header.masthead .header-content h1 {
   color: #ffa723;
   margin-bottom: 10px;
 }
-
 header.masthead .header-content .btn-kakao {
   background-color: #ffe500;
   border-radius: 10px;
@@ -213,22 +196,18 @@ header.masthead .header-content .btn-kakao {
   z-index: 1000;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
 header.masthead .header-content .btn-kakao > img {
   height: 100%;
 }
-
 header.masthead .device-container {
   max-width: 340px;
   margin-right: auto;
   margin-left: auto;
 }
-
 header.masthead .device-container .screen img {
-  border: 1px solid #777777;
+  border: 1px solid rgb(119.085, 119.085, 119.085);
   border-radius: 6px;
 }
-
 @media (min-width: 992px) {
   header.masthead {
     padding-top: 150px;
@@ -266,27 +245,22 @@ section.download {
   background-color: #333333;
   color: white;
 }
-
 section.download h2 {
   font-size: 30px;
   margin-bottom: 30px;
   word-break: keep-all;
 }
-
 section.download .badges a {
   text-decoration: none;
 }
-
 section.download .badges a:last-child img {
   width: 166px;
   padding: 0;
 }
-
 section.download .badges img {
   width: 150px;
   padding: 5px 10px;
 }
-
 @media (min-width: 768px) {
   section.download h2 {
     font-size: 40px;
@@ -301,41 +275,34 @@ section.how-to-use {
   color: white;
   padding: 50px 0;
 }
-
 section.how-to-use .section-heading h1 {
   margin-top: 0;
   font-weight: bold;
   font-size: 30px;
   word-break: keep-all;
 }
-
 section.how-to-use .section-heading p {
   margin-bottom: 0;
 }
-
 section.how-to-use .feature-item {
   max-width: 325px;
   margin: 0 auto;
   display: flex;
 }
-
 section.how-to-use .feature-item .number {
   width: 20px;
   height: 20px;
   margin-bottom: 20px;
   margin-right: 5px;
 }
-
 section.how-to-use .feature-item .image img {
   width: 100px;
 }
-
 section.how-to-use .feature-item {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-
 section.how-to-use .feature-item h3 {
   font-size: 15px;
   word-break: keep-all;
@@ -344,7 +311,6 @@ section.how-to-use .feature-item h3 {
   margin-left: 10px;
   font-weight: normal;
 }
-
 section.how-to-use .feature-item i {
   font-size: 80px;
   display: block;
@@ -353,7 +319,6 @@ section.how-to-use .feature-item i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 @media (min-width: 992px) {
   section.how-to-use .feature-item {
     display: inherit;
@@ -378,40 +343,33 @@ section.description {
   color: black;
   padding: 50px 0;
 }
-
 section.description .section-heading h1 {
   margin-top: 0;
   font-weight: bold;
   font-size: 30px;
   word-break: keep-all;
 }
-
 section.description .section-heading p {
   margin-bottom: 0;
 }
-
 section.description .feature-item {
   max-width: 325px;
   margin: 0 auto;
   display: flex;
 }
-
 section.description .feature-item .number {
   width: 35px;
   margin-bottom: 20px;
 }
-
 section.description .feature-item .image img {
   width: 60px;
   margin-right: 20px;
 }
-
 section.description .feature-item {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-
 section.description .feature-item h3 {
   font-size: 15px;
   word-break: keep-all;
@@ -420,7 +378,6 @@ section.description .feature-item h3 {
   margin-left: 10px;
   font-weight: normal;
 }
-
 section.description .feature-item i {
   font-size: 80px;
   display: block;
@@ -429,7 +386,6 @@ section.description .feature-item i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 @media (min-width: 992px) {
   section.description .feature-item {
     display: inherit;
@@ -450,33 +406,27 @@ section.feature {
   background-color: #ffdead;
   background-position: center;
 }
-
 section.feature .feature-content {
   position: relative;
   z-index: 1;
   color: black;
 }
-
 section.feature .feature-content h2 {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 25px;
   font-weight: bold;
 }
-
 section.feature .feature-content a {
   color: black;
 }
-
 section.feature .feature-content .container {
   max-width: 540px;
   text-align: center;
 }
-
 section.feature .feature-content .device-container {
   margin: auto;
 }
-
 section.feature .feature-content .device-container .screen > img {
   width: 100%;
   opacity: 0;
@@ -487,50 +437,40 @@ section.feature .feature-content .device-container .screen > img {
   right: 0;
   bottom: 0;
   border-radius: 3px;
-  border: 1px solid #777777;
+  border: 1px solid rgb(119.085, 119.085, 119.085);
 }
-
 section.feature .feature-content .device-container .screen > img.active {
   opacity: 1;
 }
-
 section.feature .feature-content .feature-buttons {
   color: white;
 }
-
 section.feature .feature-content .feature-buttons .feature-button {
   border-radius: 300px;
   border: none;
   font-size: 18px;
 }
-
 section.feature .feature-content .feature-buttons .feature-button.active {
   font-weight: bold;
 }
-
 section.feature .feature-content .feature-buttons .feature-button:focus, section.feature .feature-content .feature-buttons .feature-button:active {
   outline: 0;
   box-shadow: none;
 }
-
 section.feature .feature-content .feature-buttons .feature-button:not(.active) {
   color: black;
 }
-
 section.feature .feature-content .feature-descriptions {
   min-height: 65px;
   margin-bottom: 10px;
   word-break: keep-all;
 }
-
 section.feature .feature-content .feature-descriptions .feature-description {
   display: none;
 }
-
 section.feature .feature-content .feature-descriptions .feature-description.active {
   display: block;
 }
-
 @media (min-width: 992px) {
   section.feature .feature-content .container {
     max-width: 960px;
@@ -543,20 +483,16 @@ section.feature .feature-content .feature-descriptions .feature-description.acti
 section.contact {
   text-align: center;
 }
-
 section.contact h2 {
   margin-top: 0;
   margin-bottom: 25px;
 }
-
 section.contact h2 i {
   color: #dd4b39;
 }
-
 section.contact ul.list-social {
   margin-bottom: 0;
 }
-
 section.contact ul.list-social li a {
   font-size: 40px;
   line-height: 80px;
@@ -566,66 +502,56 @@ section.contact ul.list-social li a {
   color: white;
   border-radius: 100%;
 }
-
 section.contact ul.list-social li.social-twitter a {
   background-color: #1da1f2;
 }
-
 section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
+  background-color: rgb(13.3535564854, 148.9435146444, 232.1464435146);
 }
-
 section.contact ul.list-social li.social-facebook a {
   background-color: #3b5998;
 }
-
 section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
+  background-color: rgb(51.8696682464, 78.2440758294, 133.6303317536);
 }
-
 section.contact ul.list-social li.social-google-plus a {
   background-color: #dd4b39;
 }
-
 section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
+  background-color: rgb(215.4956896552, 56.5948275862, 37.0043103448);
 }
 
 footer {
   padding: 25px 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
-  background-color: #222222;
+  background-color: rgb(34.425, 34.425, 34.425);
 }
-
 footer p {
   font-size: 12px;
   margin: 0;
 }
-
 footer ul {
   margin-bottom: 0;
 }
-
 footer ul li a {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.3);
 }
-
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
   text-decoration: none;
 }
 
 .bg-primary {
   background: #ffa723;
-  background: linear-gradient(#ffa723, #ff9d0a);
+  background: linear-gradient(#ffa723, rgb(255, 156.8, 9.5));
 }
 
 .text-primary {
   color: #ffa723;
 }
 
-.no-gutter > [class*="col-"] {
+.no-gutter > [class*=col-] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -635,7 +561,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border: 1px solid;
   border-color: white;
 }
-
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
   border-color: #ffa723;
@@ -643,7 +568,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn {
-  font-family: 'NanumSquare', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "NanumSquare", "Helvetica", "Arial", "sans-serif";
   letter-spacing: 2px;
   text-transform: uppercase;
 }

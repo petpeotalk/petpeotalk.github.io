@@ -5,7 +5,7 @@ git clone petpeotalk.github.io
 npm install
 # node-sass 에러 날 경우
 node node_modules/node-sass/scripts/install.js 또는 sudo npm install -g --unsafe-perm node-sass
-npm run start
+open index.html
 ```
 
 ## 기술 스택
