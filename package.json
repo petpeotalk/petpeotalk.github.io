@@ -2,9 +2,6 @@
     "title": "New Age",
     "name": "startbootstrap-new-age",
     "version": "5.0.7",
-    "scripts": {
-        "start": "node_modules/.bin/gulp watch"
-    },
     "description": "A one page app landing page HTML theme for Bootstrap.",
     "keywords": [
         "css",
@@ -30,23 +27,26 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
+        "axios": "^1.6.7",
         "bootstrap": "4.3.1",
         "core-util-is": "^1.0.2",
-        "jquery": "3.4.1",
+        "http-proxy": "^1.18.1",
+        "jquery": "^3.5.1",
         "jquery.easing": "^1.4.1",
-        "simple-line-icons": "2.4.1"
+        "simple-line-icons": "2.4.1",
+        "socket.io": "^4.8.3",
+        "ua-parser-js": "^0.7.24"
     },
     "devDependencies": {
-        "browser-sync": "2.26.7",
+        "browser-sync": "^3.0.4",
         "del": "5.1.0",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "7.0.0",
+        "gulp-autoprefixer": "^10.0.0",
         "gulp-clean-css": "4.2.0",
-        "gulp-header": "2.0.9",
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
+        "gulp-sass": "^5.1.0",
         "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
+        "merge-stream": "2.0.0",
+        "sass": "^1.93.2"
     }
 }
