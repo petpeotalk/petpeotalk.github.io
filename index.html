@@ -60,6 +60,31 @@
     window.addEventListener('DOMContentLoaded', callback);
     window.addEventListener('resize', callback);
     window.addEventListener('orientationchange', callback);
+
+    /* URL path에 맞게 iframe 로드 */
+    function syncIframeToPath() {
+      const iframe = document.getElementById('iframe');
+      if (!iframe) return;
+      const base = new URL(iframe.src).origin;
+      const path = location.pathname === '/' || location.pathname === '' ? '/landing' : location.pathname;
+      const targetSrc = base + path;
+      if (iframe.src !== targetSrc) iframe.src = targetSrc;
+    }
+    window.addEventListener('DOMContentLoaded', syncIframeToPath);
+    window.addEventListener('popstate', syncIframeToPath);
+
+    window.addEventListener('message', (event) => {
+      if (event.origin !== 'https://dogibogi.tv') return;
+
+      if (event.data.type === 'route_change') {
+        const newPath = event.data.path;
+        const pathToShow = newPath === '/landing' ? '/' : newPath;
+
+        if (window.location.pathname !== pathToShow) {
+          window.history.replaceState(null, '', pathToShow);
+        }
+      }
+    });
   </script>
 
   <style>
